@@ -1,5 +1,7 @@
 # AI Customer Support
 
+[All case studies](https://codeasystem.com/case-study.md)
+
 Resolve common questions faster using your own company knowledge.
 
 ## The challenge
@@ -13,3 +15,9 @@ We turn your help content, product documentation and support history into an ass
 ## How it helps your organisation
 
 Customers get useful answers sooner, agents have more time for difficult cases, and leaders can see which questions point to gaps in the product or documentation.
+
+## Interested in this approach?
+
+Talk to us on LinkedIn.
+
+Tell us what you are working on and we will reply with the right next questions.

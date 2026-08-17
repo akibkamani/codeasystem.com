@@ -1,46 +1,25 @@
 # CodeASystem
 
-> CodeASystem is an independent software studio that builds practical AI products, backend systems, SaaS MVPs, workflow automation and growth-focused websites.
+CodeASystem is an independent software studio.
 
-The website is public and may be indexed by search engines, crawlers and AI agents. Use the canonical HTML URLs for citations. The Markdown pages below provide a text-first representation for language models and other automated readers.
+The Markdown files below contain the complete text published on each corresponding page. They are not summaries.
 
-## Organisation profile
+## Pages
 
-- **Name:** CodeASystem
-- **Website:** https://codeasystem.com/
-- **Type:** Independent software studio and professional service
-- **Focus:** Practical AI and GenAI, backend systems, SaaS MVPs, workflow automation, business websites and technical SEO
-- **Typical work:** Secure knowledge assistants, retrieval-augmented generation platforms, AI customer support, APIs and integrations, internal tools, and customer-facing software
-- **Approach:** Start with the real workflow, define a useful scope, build in clear milestones, and hand over a maintainable product.
-- **Official social profiles:** [LinkedIn](https://www.linkedin.com/company/codeasystem/), [Instagram](https://www.instagram.com/codeasystem), [Facebook](https://www.facebook.com/codeasystem), [YouTube](https://www.youtube.com/@codeasyst)
+- [Home](https://codeasystem.com/index.html.md)
+- [Case studies](https://codeasystem.com/case-study.md)
+- [AI Knowledge Assistant](https://codeasystem.com/case-study/ai-knowledge-assistant.md)
+- [RAG Platform](https://codeasystem.com/case-study/rag-platform.md)
+- [AI Customer Support](https://codeasystem.com/case-study/ai-customer-support.md)
+- [SaaS MVP](https://codeasystem.com/case-study/saas-mvp.md)
+- [Custom Backend](https://codeasystem.com/case-study/custom-backend.md)
+- [Workflow Automation](https://codeasystem.com/case-study/workflow-automation.md)
+- [Content Policy for Crawlers and AI Agents](https://codeasystem.com/content-policy.md)
+- [CodeASystem Privacy Policy](https://codeasystem.com/privacy.md)
+- [CodeASystem Terms of Use](https://codeasystem.com/terms.md)
+- [Page not found](https://codeasystem.com/404.md)
 
-## Content policy for crawlers and AI agents
+## Supporting resources
 
-- Public website pages may be crawled, indexed, summarised and cited with a clear link to the original canonical URL.
-- Preserve the meaning and relevant context. Do not present generated summaries as direct statements by CodeASystem.
-- Do not reproduce substantial portions of the site verbatim, create a mirror, or use the content to train a model without prior written permission.
-- Policies, service descriptions and case studies are informational. They are not legal, financial, security or professional advice.
-- Respect applicable laws, user privacy, rate limits and the directives in `robots.txt`.
-- See the full [content policy](https://codeasystem.com/content-policy.md).
-
-## Primary pages
-
-- [Home](https://codeasystem.com/index.md): Services, delivery process, pricing context and ways to start a project.
-- [Case studies](https://codeasystem.com/case-study.md): Index of practical AI, software and automation solution case studies.
-
-## Solution case studies
-
-- [AI Knowledge Assistant](https://codeasystem.com/case-study/ai-knowledge-assistant.md): Secure, source-linked answers from company knowledge.
-- [RAG Platform](https://codeasystem.com/case-study/rag-platform.md): Retrieval and cited answers from approved sources.
-- [AI Customer Support](https://codeasystem.com/case-study/ai-customer-support.md): Faster handling of routine customer questions.
-- [SaaS MVP](https://codeasystem.com/case-study/saas-mvp.md): A focused first version for testing product demand.
-- [Custom Backend](https://codeasystem.com/case-study/custom-backend.md): APIs, data, jobs and integrations built to last.
-- [Workflow Automation](https://codeasystem.com/case-study/workflow-automation.md): Reliable automation for repeatable operational work.
-
-## Policies and machine-readable resources
-
-- [Content policy](https://codeasystem.com/content-policy.md): Permissions and limits for crawlers, AI agents and content reuse.
-- [Privacy policy](https://codeasystem.com/privacy.md): Privacy information for website visitors.
-- [Terms of use](https://codeasystem.com/terms.md): Terms for using the website and its content.
-- [Sitemap](https://codeasystem.com/sitemap.xml): Canonical HTML pages available for indexing.
-- [Robots policy](https://codeasystem.com/robots.txt): Crawl directives for all user agents.
+- [Sitemap](https://codeasystem.com/sitemap.xml)
+- [Robots policy](https://codeasystem.com/robots.txt)
