@@ -1,0 +1,341 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link "CodeASystem home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: CodeASystem
+      - generic [ref=e7]:
+        - link "Solutions" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Products" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Pricing" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Case studies" [ref=e12] [cursor=pointer]:
+          - /url: /case-study
+      - link "Start a project" [ref=e13] [cursor=pointer]:
+        - /url: /
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Independent software studio
+        - heading [level=1] [ref=e22]:
+          - text: Software that
+          - emphasis [ref=e23]: moves things forward.
+        - paragraph [ref=e24]: We build production-ready AI products, backend systems and custom software, from first idea to deployment.
+        - generic [ref=e25]:
+          - link "Start a project" [ref=e26] [cursor=pointer]:
+            - /url: /
+          - link "Explore solutions" [ref=e30] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e33]: Async-first. No unnecessary sales meetings.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: C
+            - generic [ref=e40]: knowledge.workspace
+          - generic [ref=e41]: System live
+        - generic [ref=e43]:
+          - complementary [ref=e44]:
+            - generic [ref=e45]: CONNECTED SOURCES
+            - generic [ref=e46]:
+              - generic [ref=e47]: ◇
+              - paragraph [ref=e48]:
+                - text: Product docs
+                - generic [ref=e49]: 24 files
+              - generic [ref=e50]: ✓
+            - generic [ref=e51]:
+              - generic [ref=e52]: ⊞
+              - paragraph [ref=e53]:
+                - text: Support data
+                - generic [ref=e54]: 1,204 tickets
+              - generic [ref=e55]: ✓
+            - generic [ref=e56]:
+              - generic [ref=e57]: ◫
+              - paragraph [ref=e58]:
+                - text: Team wiki
+                - generic [ref=e59]: 38 pages
+              - generic [ref=e60]: ✓
+            - generic [ref=e61]: + Add source
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e64]: ASK YOUR KNOWLEDGE BASE
+              - generic [ref=e65]: ✦
+            - generic [ref=e66]: How do we handle enterprise SSO?
+            - generic [ref=e67]:
+              - generic [ref=e68]: ✦
+              - paragraph [ref=e69]: Enterprise SSO is available on the Business plan. It supports SAML 2.0, with provisioning through SCIM.
+            - generic [ref=e70]:
+              - generic [ref=e71]: 1. Security overview
+              - generic [ref=e72]: 2. Enterprise setup
+            - generic [ref=e73]:
+              - generic [ref=e74]: Ask a follow-up question...
+              - generic [ref=e75]: ↑
+        - generic [ref=e76]:
+          - generic [ref=e77]: RETRIEVAL ACCURACY
+          - strong [ref=e78]: 98.4%
+          - text: ↑ 4.2%
+    - region "What CodeASystem builds" [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]: AI PRODUCTS✦
+          - generic [ref=e83]: BACKEND SYSTEMS✦
+          - generic [ref=e84]: CUSTOM SOFTWARE✦
+          - generic [ref=e85]: RAG APPLICATIONS✦
+          - generic [ref=e86]: SAAS MVPs✦
+          - generic [ref=e87]: WORKFLOW AUTOMATION✦
+          - generic [ref=e88]: AI ASSISTANTS✦
+          - generic [ref=e89]: API DEVELOPMENT✦
+        - generic [ref=e90]:
+          - generic [ref=e91]: AI PRODUCTS✦
+          - generic [ref=e92]: BACKEND SYSTEMS✦
+          - generic [ref=e93]: CUSTOM SOFTWARE✦
+          - generic [ref=e94]: RAG APPLICATIONS✦
+          - generic [ref=e95]: SAAS MVPs✦
+          - generic [ref=e96]: WORKFLOW AUTOMATION✦
+          - generic [ref=e97]: AI ASSISTANTS✦
+          - generic [ref=e98]: API DEVELOPMENT✦
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: What we build
+          - heading "Strong ideas need strong foundations." [level=2] [ref=e104]: Strong ideas needstrong foundations.
+        - paragraph [ref=e105]: From practical AI to the systems underneath it, we make the technical work feel less complicated.
+      - generic [ref=e106]:
+        - article [ref=e107]:
+          - generic [ref=e108]: "01"
+          - heading "AI & GenAI" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Useful AI systems grounded in your data and built around real workflows.
+          - generic [ref=e114]:
+            - generic [ref=e115]: RAG applications
+            - generic [ref=e116]: AI assistants
+            - generic [ref=e117]: Document intelligence
+            - generic [ref=e118]: AI automation
+          - link "Learn more" [ref=e119] [cursor=pointer]:
+            - /url: /
+        - article [ref=e123]:
+          - generic [ref=e124]: "02"
+          - heading "Backend systems" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Reliable foundations for products that need to work as they grow.
+          - generic [ref=e132]:
+            - generic [ref=e133]: FastAPI / Python
+            - generic [ref=e134]: PostgreSQL
+            - generic [ref=e135]: Payments & auth
+            - generic [ref=e136]: Realtime systems
+          - link "Learn more" [ref=e137] [cursor=pointer]:
+            - /url: /
+        - article [ref=e141]:
+          - generic [ref=e142]: "03"
+          - heading "SaaS & MVPs" [level=3] [ref=e148]
+          - paragraph [ref=e149]: Focused products that get the important use case into customers’ hands.
+          - generic [ref=e150]:
+            - generic [ref=e151]: Subscription products
+            - generic [ref=e152]: Customer portals
+            - generic [ref=e153]: Admin systems
+            - generic [ref=e154]: Internal tools
+          - link "Learn more" [ref=e155] [cursor=pointer]:
+            - /url: /
+        - article [ref=e159]:
+          - generic [ref=e160]: "04"
+          - heading "Web & growth" [level=3] [ref=e166]
+          - paragraph [ref=e167]: Clear, fast websites and the content systems that support them.
+          - generic [ref=e168]:
+            - generic [ref=e169]: Business websites
+            - generic [ref=e170]: Landing pages
+            - generic [ref=e171]: Technical SEO
+            - generic [ref=e172]: Content systems
+          - link "Learn more" [ref=e173] [cursor=pointer]:
+            - /url: /
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - generic [ref=e181]: Ready to adapt
+          - heading "Solutions with a clear starting point." [level=2] [ref=e183]: Solutions with aclear starting point.
+        - paragraph [ref=e184]: Common problems, thoughtfully solved. We tailor the details to how your business actually works.
+      - generic [ref=e185]:
+        - link "01 AI Knowledge Assistant Give your team a secure way to chat with company documents and data. Knowledge, search, answers" [ref=e186] [cursor=pointer]:
+          - /url: /case-study/ai-knowledge-assistant
+          - generic [ref=e187]: "01"
+          - generic [ref=e188]:
+            - heading "AI Knowledge Assistant" [level=3] [ref=e189]
+            - paragraph [ref=e190]: Give your team a secure way to chat with company documents and data.
+          - generic [ref=e191]: Knowledge, search, answers
+        - link "02 RAG Platform Search, retrieve, and answer from your sources with clear citations. RAG, retrieval, citations" [ref=e196] [cursor=pointer]:
+          - /url: /case-study/rag-platform
+          - generic [ref=e197]: "02"
+          - generic [ref=e198]:
+            - heading "RAG Platform" [level=3] [ref=e199]
+            - paragraph [ref=e200]: Search, retrieve, and answer from your sources with clear citations.
+          - generic [ref=e201]: RAG, retrieval, citations
+        - link "03 AI Customer Support Resolve common questions faster using your own company knowledge. Support, automation, AI" [ref=e206] [cursor=pointer]:
+          - /url: /case-study/ai-customer-support
+          - generic [ref=e207]: "03"
+          - generic [ref=e208]:
+            - heading "AI Customer Support" [level=3] [ref=e209]
+            - paragraph [ref=e210]: Resolve common questions faster using your own company knowledge.
+          - generic [ref=e211]: Support, automation, AI
+        - link "04 SaaS MVP Take a product from idea through a usable, deployed first version. Product, payments, launch" [ref=e216] [cursor=pointer]:
+          - /url: /case-study/saas-mvp
+          - generic [ref=e217]: "04"
+          - generic [ref=e218]:
+            - heading "SaaS MVP" [level=3] [ref=e219]
+            - paragraph [ref=e220]: Take a product from idea through a usable, deployed first version.
+          - generic [ref=e221]: Product, payments, launch
+        - link "05 Custom Backend APIs, data, jobs, integrations and infrastructure built to last. API, database, infrastructure" [ref=e226] [cursor=pointer]:
+          - /url: /case-study/custom-backend
+          - generic [ref=e227]: "05"
+          - generic [ref=e228]:
+            - heading "Custom Backend" [level=3] [ref=e229]
+            - paragraph [ref=e230]: APIs, data, jobs, integrations and infrastructure built to last.
+          - generic [ref=e231]: API, database, infrastructure
+        - link "06 Workflow Automation Replace repetitive steps with dependable automated workflows. Operations, integrations, jobs" [ref=e236] [cursor=pointer]:
+          - /url: /case-study/workflow-automation
+          - generic [ref=e237]: "06"
+          - generic [ref=e238]:
+            - heading "Workflow Automation" [level=3] [ref=e239]
+            - paragraph [ref=e240]: Replace repetitive steps with dependable automated workflows.
+          - generic [ref=e241]: Operations, integrations, jobs
+    - generic [ref=e246]:
+      - generic [ref=e247]:
+        - generic [ref=e248]: Why CodeASystem
+        - heading [level=2] [ref=e250]:
+          - text: Serious about
+          - emphasis [ref=e251]: getting it right.
+      - generic [ref=e252]:
+        - article [ref=e253]:
+          - text: "01"
+          - heading "End-to-end" [level=3] [ref=e254]
+          - paragraph [ref=e255]: AI, backend, frontend, infrastructure and deployment in one capable team.
+        - article [ref=e256]:
+          - text: "02"
+          - heading "Production-minded" [level=3] [ref=e257]
+          - paragraph [ref=e258]: Security, reliability and scale are considered from the first useful version.
+        - article [ref=e259]:
+          - text: "03"
+          - heading "Lean execution" [level=3] [ref=e260]
+          - paragraph [ref=e261]: We build the important use case first, without months of unnecessary features.
+        - article [ref=e262]:
+          - text: "04"
+          - heading "Async-first" [level=3] [ref=e263]
+          - paragraph [ref=e264]: Clear communication and delivery over email and chat, on your schedule.
+    - generic [ref=e266]:
+      - generic [ref=e267]:
+        - generic [ref=e268]: How it works
+        - heading "Clear from the very beginning." [level=2] [ref=e270]: Clear from thevery beginning.
+        - paragraph [ref=e271]: A straightforward process that keeps momentum high and surprises low.
+      - generic [ref=e272]:
+        - article [ref=e273]:
+          - text: "01"
+          - heading "Describe your project" [level=3] [ref=e275]
+          - paragraph [ref=e276]: Share the problem, required features, timing and budget.
+        - article [ref=e277]:
+          - text: "02"
+          - heading "Requirements review" [level=3] [ref=e279]
+          - paragraph [ref=e280]: We clarify the details asynchronously by email or chat.
+        - article [ref=e281]:
+          - text: "03"
+          - heading "Scope & quote" [level=3] [ref=e283]
+          - paragraph [ref=e284]: You receive a clear scope, timeline, price and milestones.
+        - article [ref=e285]:
+          - text: "04"
+          - heading "Build & deploy" [level=3] [ref=e287]
+          - paragraph [ref=e288]: We build against milestones, review together, then hand it over.
+    - generic [ref=e289]:
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - generic [ref=e292]: Pricing
+          - heading "Flexible ways to work together." [level=2] [ref=e294]: Flexible waysto work together.
+        - generic [ref=e295]:
+          - paragraph [ref=e296]: Every project is different. These starting points help you understand where we fit.
+          - generic "Choose currency" [ref=e297]:
+            - button "USD $" [ref=e298] [cursor=pointer]
+            - button "INR ₹" [ref=e299] [cursor=pointer]
+      - generic [ref=e300]:
+        - article [ref=e301]:
+          - generic [ref=e302]: Starter Build
+          - heading [level=3] [ref=e303]:
+            - text: $600
+            - superscript [ref=e304]: +
+          - paragraph [ref=e305]: Websites, integrations, small AI systems and automation.
+          - link "Talk about a starter build" [ref=e306] [cursor=pointer]:
+            - /url: /
+        - article [ref=e309]:
+          - generic [ref=e310]: Custom Development
+          - heading "Let’s talk" [level=3] [ref=e311]
+          - paragraph [ref=e312]: SaaS products, AI platforms and backend systems built around your needs.
+          - link "Start a project" [ref=e313] [cursor=pointer]:
+            - /url: /
+        - article [ref=e317]:
+          - generic [ref=e318]: Dedicated Engineering
+          - heading [level=3] [ref=e319]:
+            - text: $2.4K
+            - superscript [ref=e320]: +
+            - text: /month
+          - paragraph [ref=e321]: Ongoing product and engineering work for teams that need momentum.
+          - link "Explore an engagement" [ref=e322] [cursor=pointer]:
+            - /url: /
+    - generic [ref=e326]:
+      - generic [ref=e327]:
+        - generic [ref=e328]: Products
+        - heading [level=2] [ref=e330]:
+          - text: Built here,
+          - emphasis [ref=e331]: available soon.
+      - generic [ref=e332]:
+        - paragraph [ref=e333]: We’re turning repeatable solutions into focused products. Watch this space.
+        - generic [ref=e334]:
+          - generic [ref=e335]: AI Interviewer
+          - generic [ref=e337]: RAG Platform
+          - generic [ref=e339]: More to come
+    - generic [ref=e342]:
+      - generic [ref=e343]:
+        - generic [ref=e344]: Start a project
+        - heading "Have something worth building?" [level=2] [ref=e346]: Have somethingworth building?
+        - paragraph [ref=e347]: Share your goal, timeline and current challenge. We’ll come back with the right next questions.
+      - generic [ref=e348]:
+        - generic [ref=e349]:
+          - generic [ref=e350]: CONNECT WITH CODEASYSTEM
+          - heading "Let’s make a useful plan." [level=3] [ref=e351]
+          - paragraph [ref=e352]: Message our team directly and start the conversation where we work every day.
+        - link "in Message us on LinkedIn Start a project conversation" [ref=e353] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/codeasystem/
+          - generic [ref=e354]: in
+          - generic [ref=e355]:
+            - text: Message us on LinkedIn
+            - generic [ref=e356]: Start a project conversation
+  - contentinfo [ref=e360]:
+    - generic [ref=e361]:
+      - generic [ref=e362]:
+        - link "CodeASystem" [ref=e363] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e365]: AI products, backend systems and custom software built around the work that matters.
+      - generic [ref=e366]:
+        - generic [ref=e367]: Explore
+        - link "Solutions" [ref=e368] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e369] [cursor=pointer]:
+          - /url: /
+        - link "Products" [ref=e370] [cursor=pointer]:
+          - /url: /
+        - link "Pricing" [ref=e371] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e372]:
+        - generic [ref=e373]: Connect
+        - link "LinkedIn" [ref=e374] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/codeasystem/
+        - link "Instagram" [ref=e378] [cursor=pointer]:
+          - /url: https://www.instagram.com/codeasystem
+        - link "Facebook" [ref=e382] [cursor=pointer]:
+          - /url: https://www.facebook.com/codeasystem
+        - link "YouTube" [ref=e386] [cursor=pointer]:
+          - /url: https://www.youtube.com/@codeasyst
+      - generic [ref=e390]:
+        - generic [ref=e391]: Legal
+        - link "Privacy Policy" [ref=e392] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms of Use" [ref=e393] [cursor=pointer]:
+          - /url: /terms
+    - generic [ref=e394]:
+      - generic [ref=e395]: © 2026 CodeASystem
+      - generic [ref=e396]: Independent software studio
