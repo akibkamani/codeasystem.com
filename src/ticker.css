@@ -1,0 +1,23 @@
+.ticker .ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-loop 42s linear infinite;
+}
+
+.ticker .ticker-group {
+  display: flex;
+  align-items: center;
+  flex: none;
+  animation: none;
+}
+
+.ticker .ticker-group span { padding: 0 25px; }
+.ticker .ticker-group i { color: #9abb45; font-style: normal; padding: 0 3px; }
+
+@keyframes ticker-loop {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker .ticker-track { animation: none; }
+}

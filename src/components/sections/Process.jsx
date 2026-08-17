@@ -1,0 +1,2 @@
+import { steps } from '../../data/siteData'
+export default function Process() { return <section className="process-wrap"><div className="container section"><div className="process-title"><div className="eyebrow"><span/> How it works</div><h2>Clear from the<br/>very beginning.</h2><p>A straightforward process that keeps momentum high and surprises low.</p></div><div className="steps">{steps.map(([number, title, text]) => <article key={number}><span>{number}</span><div className="step-dot"/><h3>{title}</h3><p>{text}</p></article>)}</div></div></section> }

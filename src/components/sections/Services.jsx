@@ -1,0 +1,4 @@
+import { MoveUpRight } from 'lucide-react'
+import { services } from '../../data/siteData'
+import SectionLink from '../SectionLink'
+export default function Services() { return <section className="container section" id="services"><div className="section-intro"><div><div className="eyebrow"><span/> What we build</div><h2>Strong ideas need<br/>strong foundations.</h2></div><p>From practical AI to the systems underneath it, we make the technical work feel less complicated.</p></div><div className="service-grid">{services.map(({ icon: Icon, number, title, text, tags }) => <article className="service-card" key={title}><div className="service-top"><span>{number}</span><Icon size={22}/></div><h3>{title}</h3><p>{text}</p><div className="tags">{tags.map((tag) => <span key={tag}>{tag}</span>)}</div><SectionLink sectionId="contact">Learn more <MoveUpRight size={16}/></SectionLink></article>)}</div></section> }

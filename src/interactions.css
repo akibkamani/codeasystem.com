@@ -1,0 +1,90 @@
+.price-grid article:not(.price-featured) > button {
+  width: fit-content;
+  padding: 10px 12px;
+  margin-left: -12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color .2s ease, background-color .2s ease;
+}
+
+.price-grid article:not(.price-featured) > button:hover {
+  border-color: #8a9b7e;
+  background: #eceee3;
+}
+
+.price-featured .button {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 16px 24px;
+  min-width: 156px;
+  justify-content: center;
+  background: #f5f6ee;
+  border: 1px solid #17231f;
+  color: #17231f;
+}
+
+.price-featured .button:hover { background: #24342c; color: #fff; }
+
+.contact-links { justify-content: space-between; }
+.contact-links .panel-label {
+  color: #5d6d63;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.contact-links h3 { margin: 9px 0 8px; font-size: 24px; letter-spacing: -1.2px; }
+.contact-links p { margin: 0; max-width: 320px; color: #66716c; font-size: 13px; line-height: 1.6; }
+.linkedin-cta { display: flex; align-items: center; gap: 13px; width: 100%; margin-top: 30px; padding: 15px; border-radius: 4px; background: #17231f; color: #f3f6e9; text-decoration: none; transition: .2s ease; }.linkedin-cta:hover { transform: translateY(-2px); background: #34473d; }.linkedin-cta b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #d6fa51; color: #17231f; font-family: Arial, sans-serif; font-size: 13px; }.linkedin-cta span { display: flex; flex: 1; flex-direction: column; font-size: 12px; font-weight: 800; }.linkedin-cta small { margin-top: 3px; color: #b8c7bb; font-size: 9px; font-weight: 500; }
+.social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 24px; }
+.social-grid a { display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #d5dacd; border-radius: 4px; color: #17231f; text-decoration: none; transition: .2s ease; }
+.social-grid a:hover { transform: translateY(-2px); border-color: #9bac75; background: #eef1e5; }
+.social-grid b { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; background: #1e2b25; color: #d6fa51; font-family: Arial, sans-serif; font-size: 12px; }
+.social-grid span { display: flex; flex: 1; flex-direction: column; font-size: 11px; font-weight: 800; }.social-grid small { margin-top: 2px; color: #6f7c74; font-size: 8px; font-weight: 500; }.social-grid svg { color: #738739; }
+.footer-socials { display: flex; gap: 14px; }.footer-socials a { display: inline-flex; align-items: center; gap: 3px; color: #536057; font: 600 10px 'DM Mono', monospace; text-decoration: none; transition: color .2s ease; }.footer-socials a:hover { color: #718d2f; }.footer-socials svg { transition: transform .2s ease; }.footer-socials a:hover svg { transform: translate(2px, -2px); }
+@media (max-width: 580px) { .social-grid { grid-template-columns: 1fr; }.contact-links .panel-label { font-size: 10px; }.contact-links h3 { font-size: 21px; } }
+
+/* Larger contact and footer text to match the main site's reading size. */
+.contact-links p { font-size: 15px; }
+.linkedin-cta b { font-size: 15px; }.linkedin-cta span { font-size: 14px; }.linkedin-cta small { font-size: 11px; }
+.footer-socials a { font-size: 12px; }
+
+/* Router links share the same visual treatment as the buttons they replaced. */
+.nav-links .section-link,
+.text-button,
+.service-card .section-link,
+.price-grid .price-action {
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links .section-link:hover { color: #6e9430; }
+
+.service-card .section-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  text-align: left;
+}
+
+.price-grid .price-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: auto;
+  margin-left: -12px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color .2s ease, background-color .2s ease;
+}
+
+.price-grid .price-action:hover {
+  border-color: #8a9b7e;
+  background: #eceee3;
+}

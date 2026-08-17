@@ -1,0 +1,2 @@
+const items = ['AI PRODUCTS', 'BACKEND SYSTEMS', 'CUSTOM SOFTWARE', 'RAG APPLICATIONS', 'SAAS MVPs', 'WORKFLOW AUTOMATION', 'AI ASSISTANTS', 'API DEVELOPMENT']
+export default function Ticker() { return <section className="ticker" aria-label="What CodeASystem builds"><div className="ticker-track">{[0, 1].map((copy) => <div className="ticker-group" key={copy} aria-hidden={copy === 1}>{items.map((item) => <span key={item}>{item}<i>✦</i></span>)}</div>)}</div></section> }
