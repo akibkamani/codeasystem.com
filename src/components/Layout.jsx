@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Footer from './Footer'
+import Seo from './Seo'
 import SiteHeader from './SiteHeader'
 
 export default function Layout({ children }) {
@@ -12,5 +13,5 @@ export default function Layout({ children }) {
     }
     window.scrollTo(0, 0)
   }, [pathname, state])
-  return <><SiteHeader />{children}<Footer /></>
+  return <><Seo /><SiteHeader />{children}<Footer /></>
 }
