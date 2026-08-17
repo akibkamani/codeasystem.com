@@ -1,0 +1,4 @@
+/
+  Link: </.well-known/agent-skills/index.json>; rel="alternate"; type="application/json"
+  Link: </llms.txt>; rel="alternate"; type="text/plain"
+  Link: </index.html.md>; rel="alternate"; type="text/markdown"

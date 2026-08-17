@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import { readFile, unlink, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
 
 function inlineStylesheet() {
   return {
@@ -23,4 +22,4 @@ function inlineStylesheet() {
   }
 }
 
-export default defineConfig({ plugins: [react(), tailwindcss(), inlineStylesheet()] })
+export default defineConfig({ plugins: [react(), inlineStylesheet()] })

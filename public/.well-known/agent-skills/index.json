@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/agent-skills-discovery-rfc/main/schema.json",
+  "skills": [
+    {
+      "name": "codeasystem-site-guide",
+      "type": "skill",
+      "description": "Find and cite CodeASystem's public services, case studies, and policies.",
+      "url": "https://codeasystem.com/.well-known/agent-skills/codeasystem-site-guide/SKILL.md",
+      "sha256": "04499b6c57fbf472fdf8b0d51ed890f969cca5dda3a12a4cfe4db93790bbae59"
+    }
+  ]
+}

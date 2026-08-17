@@ -2,6 +2,9 @@
 # Public pages may be crawled, indexed, summarised and cited with attribution.
 # See https://codeasystem.com/content-policy.md for content-use terms.
 
+# Content Signals expresses CodeASystem's preferences for AI use of public content.
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
 User-agent: *
 Allow: /
 Disallow: /404
