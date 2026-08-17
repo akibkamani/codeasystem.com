@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import SectionLink from './SectionLink'
 
 const sections = [['01', 'Solutions', 'solutions'], ['02', 'Services', 'services'], ['03', 'Products', 'products'], ['04', 'Pricing', 'pricing']]
-const logoPath = `${import.meta.env.BASE_URL}codeasystem-logo.jpg`
+const logoPath = `${import.meta.env.BASE_URL}codeasystem-logo.webp`
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,7 +21,7 @@ export default function SiteHeader() {
 
   return <header className={`nav-wrap ${menuOpen ? 'menu-open' : ''}`}>
     <nav className="nav container">
-      <Link className="brand" to="/" aria-label="CodeASystem home"><img className="brand-mark" src={logoPath} alt=""/><span>CodeASystem</span></Link>
+      <Link className="brand" to="/" aria-label="CodeASystem home"><img className="brand-mark" src={logoPath} width="44" height="44" alt="" decoding="async"/><span>CodeASystem</span></Link>
       <div className="nav-links">{sections.map(([, label, id]) => <SectionLink sectionId={id} key={id}>{label}</SectionLink>)}<Link to="/case-study">Case studies</Link></div>
       <SectionLink className="button button-small" sectionId="contact">Start a project <ArrowUpRight size={15}/></SectionLink>
       <button className="menu-button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}>{menuOpen ? <X/> : <Menu/>}</button>

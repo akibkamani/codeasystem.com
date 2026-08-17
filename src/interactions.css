@@ -33,7 +33,7 @@
   letter-spacing: 1px;
 }
 .contact-links h3 { margin: 9px 0 8px; font-size: 24px; letter-spacing: -1.2px; }
-.contact-links p { margin: 0; max-width: 320px; color: #66716c; font-size: 13px; line-height: 1.6; }
+.contact-links p { margin: 0; max-width: 320px; color: #52605a; font-size: 13px; line-height: 1.6; }
 .linkedin-cta { display: flex; align-items: center; gap: 13px; width: 100%; margin-top: 30px; padding: 15px; border-radius: 4px; background: #17231f; color: #f3f6e9; text-decoration: none; transition: .2s ease; }.linkedin-cta:hover { transform: translateY(-2px); background: #34473d; }.linkedin-cta b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #d6fa51; color: #17231f; font-family: Arial, sans-serif; font-size: 13px; }.linkedin-cta span { display: flex; flex: 1; flex-direction: column; font-size: 12px; font-weight: 800; }.linkedin-cta small { margin-top: 3px; color: #b8c7bb; font-size: 9px; font-weight: 500; }
 .social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 24px; }
 .social-grid a { display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #d5dacd; border-radius: 4px; color: #17231f; text-decoration: none; transition: .2s ease; }
