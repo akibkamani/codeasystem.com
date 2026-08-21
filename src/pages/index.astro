@@ -6,7 +6,7 @@ import Services from '../components/sections/Services'
 import Solutions from '../components/sections/Solutions'
 import WhyUs from '../components/sections/WhyUs'
 import Process from '../components/sections/Process'
-import Pricing from '../components/sections/Pricing'
+import Pricing from '../components/sections/Pricing.astro'
 import Products from '../components/sections/Products'
 import Contact from '../components/sections/Contact'
 import { pageSeo, withSeoUrl } from '../data/seo'
@@ -22,7 +22,7 @@ const seo = withSeoUrl(pageSeo.home)
     <Solutions />
     <WhyUs />
     <Process />
-    <Pricing client:load />
+    <Pricing />
     <Products />
     <Contact />
   </main>

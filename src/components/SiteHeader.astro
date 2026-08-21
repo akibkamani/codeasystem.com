@@ -1,0 +1,114 @@
+---
+const sections = [
+  ['01', 'Solutions', 'solutions'],
+  ['02', 'Services', 'services'],
+  ['03', 'Products', 'products'],
+  ['04', 'Pricing', 'pricing'],
+]
+const logoPath = '/codeasystem-logo.webp'
+---
+
+<header class="nav-wrap" data-site-header>
+  <nav class="nav container">
+    <a class="brand" href="/" aria-label="CodeASystem home">
+      <img class="brand-mark" src={logoPath} width="44" height="44" alt="" decoding="async" />
+      <span>CodeASystem</span>
+    </a>
+
+    <div class="nav-links">
+      {sections.map(([, label, id]) => (
+        <a href={`/#${id}`}>{label}</a>
+      ))}
+      <a href="/case-study/">Case studies</a>
+    </div>
+
+    <a class="button button-small section-link" href="/#contact">
+      Start a project
+      <span aria-hidden="true">↗</span>
+    </a>
+
+    <button
+      class="menu-button"
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="mobile-navigation"
+      aria-label="Open navigation"
+      type="button"
+    >
+      <svg data-icon-menu xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+      <svg data-icon-close hidden xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </button>
+  </nav>
+
+  <button class="mobile-menu-backdrop" data-menu-backdrop aria-label="Close navigation" hidden></button>
+
+  <div class="mobile-menu" id="mobile-navigation" data-mobile-menu hidden>
+    <div class="mobile-menu-inner container">
+      <p class="mobile-menu-label">Explore CodeASystem</p>
+      <div class="mobile-menu-links">
+        {sections.map(([number, label, id]) => (
+          <a href={`/#${id}`} data-close-menu>
+            <span>{number}</span>
+            <strong>{label}</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+        ))}
+        <a href="/case-study/" data-close-menu>
+          <span>05</span>
+          <strong>Case studies</strong>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <a class="mobile-menu-cta" href="/#contact" data-close-menu>
+        <span>Have a project in mind?</span>
+        <strong>Start a project <span aria-hidden="true">↗</span></strong>
+      </a>
+
+      <div class="mobile-menu-note"><span></span> Independent software studio</div>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  const header = document.querySelector('[data-site-header]');
+
+  if (header) {
+    const toggleButton = header.querySelector('[data-menu-toggle]');
+    const menu = header.querySelector('[data-mobile-menu]');
+    const backdrop = header.querySelector('[data-menu-backdrop]');
+    const menuIcon = header.querySelector('[data-icon-menu]');
+    const closeIcon = header.querySelector('[data-icon-close]');
+    const closeLinks = header.querySelectorAll('[data-close-menu]');
+
+    const setMenuOpen = (open) => {
+      if (!toggleButton || !menu || !backdrop) return;
+
+      header.classList.toggle('menu-open', open);
+      document.body.classList.toggle('mobile-nav-active', open);
+      toggleButton.setAttribute('aria-expanded', String(open));
+      toggleButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      menu.hidden = !open;
+      backdrop.hidden = !open;
+
+      if (menuIcon) menuIcon.hidden = open;
+      if (closeIcon) closeIcon.hidden = !open;
+    };
+
+    const toggleMenu = () => {
+      const open = toggleButton?.getAttribute('aria-expanded') === 'true';
+      setMenuOpen(!open);
+    };
+
+    toggleButton?.addEventListener('click', toggleMenu);
+    backdrop?.addEventListener('click', () => setMenuOpen(false));
+
+    closeLinks.forEach((link) => {
+      link.addEventListener('click', () => setMenuOpen(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    });
+  }
+</script>

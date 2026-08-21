@@ -1,16 +1,23 @@
 ---
-import '../styles.css'
-import '../ticker.css'
-import '../brand.css'
-import '../hero-visual.css'
-import '../interactions.css'
-import SiteHeader from '../components/SiteHeader'
+import baseStyles from '../styles.css?raw'
+import tickerStyles from '../ticker.css?raw'
+import brandStyles from '../brand.css?raw'
+import heroVisualStyles from '../hero-visual.css?raw'
+import interactionsStyles from '../interactions.css?raw'
+import SiteHeader from '../components/SiteHeader.astro'
 import Footer from '../components/Footer'
 import { getStructuredData, siteUrl } from '../data/seo'
 
 const { seo } = Astro.props
 const title = `${seo.title} | CodeASystem`
 const structuredData = getStructuredData(seo)
+const globalStyles = [
+  baseStyles,
+  tickerStyles,
+  brandStyles,
+  heroVisualStyles,
+  interactionsStyles,
+].join('\n')
 ---
 
 <html lang="en">
@@ -37,21 +44,46 @@ const structuredData = getStructuredData(seo)
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <style is:global set:html={globalStyles} />
     <script
       type="application/ld+json"
       set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')}
     />
   </head>
   <body>
-    <SiteHeader client:load />
+    <SiteHeader />
     <slot />
     <Footer />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1VC80KG9C"></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-X1VC80KG9C');
+      const initAnalytics = () => {
+        if (window.__casAnalyticsLoaded) return;
+        window.__casAnalyticsLoaded = true;
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X1VC80KG9C';
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-X1VC80KG9C');
+      };
+
+      const enableAnalytics = () => {
+        initAnalytics();
+
+        window.removeEventListener('pointerdown', enableAnalytics);
+        window.removeEventListener('keydown', enableAnalytics);
+        window.removeEventListener('scroll', enableAnalytics);
+        window.removeEventListener('touchstart', enableAnalytics);
+      };
+
+      window.addEventListener('pointerdown', enableAnalytics, { once: true, passive: true });
+      window.addEventListener('keydown', enableAnalytics, { once: true });
+      window.addEventListener('scroll', enableAnalytics, { once: true, passive: true });
+      window.addEventListener('touchstart', enableAnalytics, { once: true, passive: true });
     </script>
   </body>
 </html>
