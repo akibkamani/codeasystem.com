@@ -2,23 +2,18 @@
   "name": "codeasystem",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "npx serve out"
   },
   "dependencies": {
+    "next": "latest",
     "lucide-react": "^0.468.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.18.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.4.1",
-    "vite": "^6.0.0"
+    "react-dom": "^19.0.0"
   }
 }

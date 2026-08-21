@@ -7,7 +7,26 @@ import Process from '../components/sections/Process'
 import Pricing from '../components/sections/Pricing'
 import Products from '../components/sections/Products'
 import Contact from '../components/sections/Contact'
+import SeoHead from '../components/SeoHead'
+import { pageSeo, withSeoUrl } from '../data/seo'
 
 export default function HomePage() {
-  return <main id="top"><Hero /><Ticker /><Services /><Solutions /><WhyUs /><Process /><Pricing /><Products /><Contact /></main>
+  const seo = withSeoUrl(pageSeo.home)
+
+  return (
+    <>
+      <SeoHead seo={seo} />
+      <main id="top">
+        <Hero />
+        <Ticker />
+        <Services />
+        <Solutions />
+        <WhyUs />
+        <Process />
+        <Pricing />
+        <Products />
+        <Contact />
+      </main>
+    </>
+  )
 }

@@ -2,55 +2,63 @@ import { solutions } from './siteData'
 
 export const siteUrl = 'https://codeasystem.com'
 
-const defaultDescription = 'CodeASystem builds practical AI products, backend systems and custom software around the work that matters.'
+export const defaultDescription = 'CodeASystem builds practical AI products, backend systems and custom software around the work that matters.'
 
-const pages = {
-  '/': {
+export const pageSeo = {
+  home: {
     title: 'AI Products, Backend Systems & Custom Software',
     description: defaultDescription,
+    path: '/',
     type: 'website',
     schemaType: 'home',
   },
-  '/case-study': {
+  caseStudies: {
     title: 'AI & Software Solution Case Studies',
     description: 'Explore practical starting points for AI, SaaS, backend and workflow automation projects built around real organisational needs.',
+    path: '/case-study',
     schemaType: 'collection',
   },
-  '/privacy': {
+  privacy: {
     title: 'Privacy Policy',
     description: 'Read the CodeASystem privacy policy and how this website handles information.',
+    path: '/privacy',
     schemaType: 'legal',
   },
-  '/terms': {
+  terms: {
     title: 'Terms of Use',
     description: 'Read the CodeASystem terms of use for this website and its content.',
+    path: '/terms',
     schemaType: 'legal',
   },
-  '/404': {
+  notFound: {
     title: 'Page Not Found',
     description: 'The page you requested could not be found on CodeASystem.',
+    path: '/404',
     schemaType: 'notFound',
     noIndex: true,
   },
 }
 
-export function getPageSeo(pathname) {
-  const route = pages[pathname]
-  if (route) return { ...route, url: `${siteUrl}${pathname}` }
+export function withSeoUrl(seo) {
+  return {
+    ...seo,
+    url: `${siteUrl}${seo.path}`,
+  }
+}
 
-  const slug = pathname.match(/^\/case-study\/([^/]+)$/)?.[1]
+export function getCaseStudySeo(slug) {
   const solution = solutions.find((item) => item.slug === slug)
-  if (solution) {
-    return {
-      title: `${solution.title} Case Study`,
-      description: `${solution.text} Explore the challenge, approach and organisational impact with CodeASystem.`,
-      schemaType: 'caseStudy',
-      solution,
-      url: `${siteUrl}${pathname}`,
-    }
+  if (!solution) {
+    return withSeoUrl(pageSeo.notFound)
   }
 
-  return { ...pages['/404'], url: `${siteUrl}/404` }
+  return withSeoUrl({
+    title: `${solution.title} Case Study`,
+    description: `${solution.text} Explore the challenge, approach and organisational impact with CodeASystem.`,
+    path: `/case-study/${slug}`,
+    schemaType: 'caseStudy',
+    solution,
+  })
 }
 
 const organization = {
