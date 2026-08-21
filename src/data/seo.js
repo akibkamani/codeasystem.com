@@ -15,25 +15,25 @@ export const pageSeo = {
   caseStudies: {
     title: 'AI & Software Solution Case Studies',
     description: 'Explore practical starting points for AI, SaaS, backend and workflow automation projects built around real organisational needs.',
-    path: '/case-study',
+    path: '/case-study/',
     schemaType: 'collection',
   },
   privacy: {
     title: 'Privacy Policy',
     description: 'Read the CodeASystem privacy policy and how this website handles information.',
-    path: '/privacy',
+    path: '/privacy/',
     schemaType: 'legal',
   },
   terms: {
     title: 'Terms of Use',
     description: 'Read the CodeASystem terms of use for this website and its content.',
-    path: '/terms',
+    path: '/terms/',
     schemaType: 'legal',
   },
   notFound: {
     title: 'Page Not Found',
     description: 'The page you requested could not be found on CodeASystem.',
-    path: '/404',
+    path: '/404/',
     schemaType: 'notFound',
     noIndex: true,
   },
@@ -55,7 +55,7 @@ export function getCaseStudySeo(slug) {
   return withSeoUrl({
     title: `${solution.title} Case Study`,
     description: `${solution.text} Explore the challenge, approach and organisational impact with CodeASystem.`,
-    path: `/case-study/${slug}`,
+    path: `/case-study/${slug}/`,
     schemaType: 'caseStudy',
     solution,
   })
@@ -109,7 +109,7 @@ export function getStructuredData(seo) {
           itemListElement: solutions.map((solution, position) => ({
             '@type': 'ListItem',
             position: position + 1,
-            url: `${siteUrl}/case-study/${solution.slug}`,
+            url: `${siteUrl}/case-study/${solution.slug}/`,
             name: solution.title,
           })),
         },

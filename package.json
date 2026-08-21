@@ -6,27 +6,13 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build --webpack",
-    "preview": "npx serve out"
-  },
-  "browserslist": {
-    "production": [
-      "chrome >= 114",
-      "edge >= 114",
-      "firefox >= 115",
-      "safari >= 16.4",
-      "ios_saf >= 16.4",
-      "not dead"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "next": "latest",
+    "astro": "^5.13.5",
+    "@astrojs/react": "^4.4.0",
     "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

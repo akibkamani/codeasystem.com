@@ -1,0 +1,57 @@
+---
+import '../styles.css'
+import '../ticker.css'
+import '../brand.css'
+import '../hero-visual.css'
+import '../interactions.css'
+import SiteHeader from '../components/SiteHeader'
+import Footer from '../components/Footer'
+import { getStructuredData, siteUrl } from '../data/seo'
+
+const { seo } = Astro.props
+const title = `${seo.title} | CodeASystem`
+const structuredData = getStructuredData(seo)
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={seo.description} />
+    <meta name="robots" content={seo.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:type" content={seo.type || 'website'} />
+    <meta property="og:url" content={seo.url} />
+    <meta property="og:site_name" content="CodeASystem" />
+    <meta property="og:image" content={`${siteUrl}/codeasystem-logo.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={`${siteUrl}/codeasystem-logo.jpg`} />
+    <link rel="canonical" href={seo.url} />
+    <meta name="theme-color" content="#101010" />
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')}
+    />
+  </head>
+  <body>
+    <SiteHeader client:load />
+    <slot />
+    <Footer />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1VC80KG9C"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X1VC80KG9C');
+    </script>
+  </body>
+</html>

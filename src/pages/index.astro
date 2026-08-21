@@ -1,3 +1,5 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
 import Hero from '../components/sections/Hero'
 import Ticker from '../components/sections/Ticker'
 import Services from '../components/sections/Services'
@@ -7,26 +9,21 @@ import Process from '../components/sections/Process'
 import Pricing from '../components/sections/Pricing'
 import Products from '../components/sections/Products'
 import Contact from '../components/sections/Contact'
-import SeoHead from '../components/SeoHead'
 import { pageSeo, withSeoUrl } from '../data/seo'
 
-export default function HomePage() {
-  const seo = withSeoUrl(pageSeo.home)
+const seo = withSeoUrl(pageSeo.home)
+---
 
-  return (
-    <>
-      <SeoHead seo={seo} />
-      <main id="top">
-        <Hero />
-        <Ticker />
-        <Services />
-        <Solutions />
-        <WhyUs />
-        <Process />
-        <Pricing />
-        <Products />
-        <Contact />
-      </main>
-    </>
-  )
-}
+<BaseLayout seo={seo}>
+  <main id="top">
+    <Hero />
+    <Ticker />
+    <Services />
+    <Solutions />
+    <WhyUs />
+    <Process />
+    <Pricing client:load />
+    <Products />
+    <Contact />
+  </main>
+</BaseLayout>

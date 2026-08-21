@@ -1,0 +1,52 @@
+---
+import { ArrowUpRight } from 'lucide-react'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { solutions } from '../../data/siteData'
+import { getCaseStudySeo } from '../../data/seo'
+
+export function getStaticPaths() {
+  return solutions.map((study) => ({
+    params: { slug: study.slug },
+    props: { study },
+  }))
+}
+
+const { study } = Astro.props
+const seo = getCaseStudySeo(study.slug)
+---
+
+<BaseLayout seo={seo}>
+  <main class="case-study-page">
+    <div class="case-study-content">
+      <div class="container case-study-inner">
+        <a class="case-study-back" href="/case-study/">← All case studies</a>
+        <div class="eyebrow"><span /> Solution case study</div>
+        <h1>{study.title}</h1>
+        <p class="case-study-lead">{study.text}</p>
+        <div class="case-study-grid">
+          <article>
+            <span>The challenge</span>
+            <p>{study.challenge}</p>
+          </article>
+          <article>
+            <span>How we would build it</span>
+            <p>{study.approach}</p>
+          </article>
+          <article>
+            <span>How it helps your organisation</span>
+            <p>{study.impact}</p>
+          </article>
+        </div>
+        <a class="solutions-linkedin-banner" href="https://www.linkedin.com/company/codeasystem/" target="_blank" rel="noreferrer">
+          <span class="linkedin-banner-mark">in</span>
+          <div>
+            <span class="linkedin-banner-eyebrow">Interested in this approach?</span>
+            <strong>Talk to us on LinkedIn.</strong>
+            <small>Tell us what you are working on and we will reply with the right next questions.</small>
+          </div>
+          <ArrowUpRight size={28} />
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

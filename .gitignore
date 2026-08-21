@@ -1,18 +1,34 @@
-# Dependencies and build output
+# dependencies
 node_modules/
-.next/
-out/
 
-# Local environment files
+# build output
+dist/
+.astro/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# environment files
 .env
 .env.*
 !.env.example
 
-# Logs and coverage
-*.log
+# test coverage
 coverage/
 
-# Operating system and editor files
+# editor and OS files
 .DS_Store
 .idea/
 .vscode/
+
+# local tooling caches
+.npm-cache/
+.playwright-cli/
+
+# legacy Next.js outputs (safe to ignore if recreated accidentally)
+.next/
+out/

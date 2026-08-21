@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { legalPages } from '../data/siteData'
+import { pageSeo, withSeoUrl } from '../data/seo'
+
+const page = legalPages.privacy
+const seo = withSeoUrl(pageSeo.privacy)
+---
+
+<BaseLayout seo={seo}>
+  <main class="legal-page">
+    <div class="container legal-inner">
+      <div class="eyebrow"><span />{page.eyebrow}</div>
+      <h1>{page.title}</h1>
+      <p class="legal-updated">{page.updated}</p>
+      <div class="legal-sections">
+        {page.sections.map(([heading, content]) => (
+          <section>
+            <h2>{heading}</h2>
+            <p>{content}</p>
+          </section>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

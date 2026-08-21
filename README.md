@@ -1,6 +1,6 @@
 # CodeASystem
 
-Marketing site for CodeASystem, built with Next.js and exported as a static website.
+Marketing site for CodeASystem, built with Astro as a static website.
 
 ## Getting started
 
@@ -16,14 +16,13 @@ npm run build
 npm run preview
 ```
 
-The build outputs static HTML files under `out/` using Next.js static export. There are no API routes or server runtime requirements.
+The build outputs static HTML files under `dist/` using Astro static generation. There are no API routes or server runtime requirements.
 
 ## Static-only setup
 
-- Static export is enforced in `next.config.mjs` with `output: 'export'`.
-- Routes are pre-rendered in `src/pages/`, including dynamic case-study pages via `getStaticPaths` and `getStaticProps`.
-- SEO and JSON-LD are rendered at build time through `src/components/SeoHead.jsx` and `src/data/seo.js`.
-- Next.js MCP tooling is configured in `.mcp.json` using `next-devtools-mcp@latest`.
+- Static generation is configured in `astro.config.mjs` with `output: 'static'`.
+- Routes are pre-rendered in `src/pages/`, including dynamic case-study pages via Astro `getStaticPaths`.
+- SEO and JSON-LD are rendered at build time through `src/layouts/BaseLayout.astro` and `src/data/seo.js`.
 
 ## Agent discovery
 
@@ -35,6 +34,6 @@ This is a marketing site, not an API or authentication provider. Do not publish 
 
 - `src/components/` shared layout and reusable UI
 - `src/components/sections/` homepage sections
-- `src/pages/` Next.js pages (static routes)
+- `src/pages/` Astro pages (static routes)
 - `src/data/` content shared between pages and components
 - `public/` static assets
