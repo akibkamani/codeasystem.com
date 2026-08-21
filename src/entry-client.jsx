@@ -1,4 +1,4 @@
-import { createRoot } from 'react-dom/client'
+import { hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router'
 import App from './App'
 import './styles.css'
@@ -7,7 +7,8 @@ import './brand.css'
 import './hero-visual.css'
 import './interactions.css'
 
-createRoot(document.getElementById('root')).render(
+hydrateRoot(
+  document.getElementById('root'),
   <BrowserRouter>
     <App />
   </BrowserRouter>,

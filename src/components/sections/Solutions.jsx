@@ -1,4 +1,4 @@
 import { ArrowUpRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { solutions } from '../../data/siteData'
 export default function Solutions() { return <section className="solutions-bg" id="solutions"><div className="container section"><div className="section-intro inverse"><div><div className="eyebrow"><span/> Ready to adapt</div><h2>Solutions with a<br/>clear starting point.</h2></div><p>Common problems, thoughtfully solved. We tailor the details to how your business actually works.</p></div><div className="solution-list">{solutions.map(({ slug, title, text, tags }, index) => <Link className="solution-row" to={`/case-study/${slug}`} key={slug}><span className="solution-number">0{index + 1}</span><div><h3>{title}</h3><p>{text}</p></div><span className="solution-tags">{tags}</span><span className="solution-arrow"><ArrowUpRight size={20}/></span></Link>)}</div></div></section> }

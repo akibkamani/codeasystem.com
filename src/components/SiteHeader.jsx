@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import SectionLink from './SectionLink'
 
 const sections = [['01', 'Solutions', 'solutions'], ['02', 'Services', 'services'], ['03', 'Products', 'products'], ['04', 'Pricing', 'pricing']]

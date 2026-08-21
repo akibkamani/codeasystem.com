@@ -1,5 +1,5 @@
 import { ArrowLeft, ArrowRight, Compass, FileText, Home } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 const nextSteps = [
   { to: '/', icon: Home, label: 'Start from home', text: 'See what CodeASystem builds and how a project begins.' },

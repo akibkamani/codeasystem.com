@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import SectionLink from './SectionLink'
 
 // The larger JPEG remains available for social previews. This compact WebP is

@@ -16,7 +16,7 @@ npm run build
 npm run preview
 ```
 
-The app uses browser-based client-side routing. Navigation swaps content without a full page reload. Configure the production host to send unknown routes to `index.html`, which is the default for most modern static hosts.
+The production build prerenders the public routes into real HTML files under `dist/`, then hydrates the app on the client. Static hosts can still fall back to `index.html`, but the generated files already contain rendered markup.
 
 ## Agent discovery
 
