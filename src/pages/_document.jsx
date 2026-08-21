@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -10,16 +11,21 @@ export default function Document() {
         <link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1VC80KG9C" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X1VC80KG9C');",
-          }}
-        />
       </Head>
       <body>
         <Main />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-X1VC80KG9C"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X1VC80KG9C');
+          `}
+        </Script>
         <NextScript />
       </body>
     </Html>
