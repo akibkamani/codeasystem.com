@@ -7,8 +7,23 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "preview": "npx serve out"
+  },
+  "browserslist": {
+    "production": [
+      "chrome >= 114",
+      "edge >= 114",
+      "firefox >= 115",
+      "safari >= 16.4",
+      "ios_saf >= 16.4",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "next": "latest",
