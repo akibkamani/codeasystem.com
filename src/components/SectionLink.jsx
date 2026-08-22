@@ -1,3 +1,5 @@
+'use client'
+
 export default function SectionLink({ sectionId, children, className = '', onNavigate, ...props }) {
   const goToSection = () => {
     onNavigate?.()

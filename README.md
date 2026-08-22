@@ -1,6 +1,6 @@
 # CodeASystem
 
-Marketing site for CodeASystem, built with Astro as a static website.
+Marketing site for CodeASystem, built with Next.js as a fully static website.
 
 ## Getting started
 
@@ -16,13 +16,24 @@ npm run build
 npm run preview
 ```
 
-The build outputs static HTML files under `dist/` using Astro static generation. There are no API routes or server runtime requirements.
+The build exports static HTML, JavaScript, CSS and assets under `out/`. There are no API routes or server runtime requirements.
 
-## Static-only setup
+## Cloudflare Pages deployment
 
-- Static generation is configured in `astro.config.mjs` with `output: 'static'`.
-- Routes are pre-rendered in `src/pages/`, including dynamic case-study pages via Astro `getStaticPaths`.
-- SEO and JSON-LD are rendered at build time through `src/layouts/BaseLayout.astro` and `src/data/seo.js`.
+Create a Cloudflare Pages project from this repository with these settings:
+
+- Build command: `npm run build`
+- Build output directory: `out`
+- Node.js version: `20` or newer
+
+`next.config.mjs` uses Next.js static export and trailing slashes. All routes, including the dynamic case studies, are generated at build time. There is no server runtime to configure.
+
+## SEO and UI
+
+- Route metadata and JSON-LD are generated from `src/data/seo.js` at build time.
+- `public/robots.txt`, `public/sitemap.xml`, `public/llms.txt`, agent discovery files and existing content policy files are copied to the static output unchanged.
+- Tailwind CSS is available through `src/app/globals.css`; the existing carefully designed CSS remains in place for visual parity.
+- shadcn’s project configuration lives in `components.json`, and Lucide supplies the interface icons.
 
 ## Agent discovery
 
@@ -30,10 +41,15 @@ The static site includes an agent skills index, an agent guidance skill, Markdow
 
 This is a marketing site, not an API or authentication provider. Do not publish API, OAuth, protected-resource, or MCP discovery documents unless those services are actually introduced.
 
+## Product documentation
+
+- [Resume generator agent guide](docs/resume-generator.md): features, JSON schema, Markdown rules, local storage, A4 printing, responsive behavior, migration, and testing checklist
+
 ## Project structure
 
 - `src/components/` shared layout and reusable UI
 - `src/components/sections/` homepage sections
-- `src/pages/` Astro pages (static routes)
+- `src/app/` Next.js App Router pages (static routes)
 - `src/data/` content shared between pages and components
+- `docs/` implementation and agent-facing product guides
 - `public/` static assets

@@ -18,6 +18,32 @@ export const pageSeo = {
     path: '/case-study/',
     schemaType: 'collection',
   },
+  resumeBuilder: {
+    title: 'Free Resume Builder | Create & Download a Professional Resume',
+    description: 'A free, local resume builder. Write, preview, and export a clean one-page resume as a PDF. No accounts, no ads, no watermarks.',
+    path: '/resume-builder/',
+    schemaType: 'tool',
+    image: '/resume-generator-og.jpg',
+    imageAlt: 'CodeASystem Free Resume Generator with a clean resume preview',
+    applicationName: 'CodeASystem Free Resume Builder',
+    features: ['Live A4 resume preview', 'PDF and JPG export', 'JSON import and export', 'Local browser storage', 'Custom sections and styling'],
+  },
+  resumeGenerator: {
+    title: 'Free Resume Generator | Create & Download a Resume PDF',
+    description: 'Create a professional resume for free, preview it live, import or export JSON, and download a PDF. Your resume data stays in your browser.',
+    path: '/tool/resume-generator/',
+    schemaType: 'tool',
+    image: '/resume-generator-og.jpg',
+    imageAlt: 'CodeASystem Free Resume Generator with a clean resume preview',
+    applicationName: 'CodeASystem Free Resume Generator',
+    features: ['Live A4 resume preview', 'PDF and JPG export', 'JSON import and export', 'Local browser storage', 'Custom sections and styling'],
+  },
+  tools: {
+    title: 'Free Tools',
+    description: 'Useful, simple tools from CodeASystem.',
+    path: '/tools/',
+    schemaType: 'collection',
+  },
   privacy: {
     title: 'Privacy Policy',
     description: 'Read the CodeASystem privacy policy and how this website handles information.',
@@ -132,6 +158,58 @@ export function getStructuredData(seo) {
           serviceType: solution.title,
           url: seo.url,
           audience: { '@type': 'BusinessAudience', audienceType: 'Organisations seeking custom software' },
+        },
+      ],
+    }
+  }
+
+  if (seo.schemaType === 'tool') {
+    const applicationId = `${seo.url}#application`
+    const breadcrumbId = `${seo.url}#breadcrumb`
+    return {
+      '@context': 'https://schema.org',
+      '@graph': [
+        organization,
+        { '@type': 'WebSite', '@id': `${siteUrl}/#website`, url: siteUrl, name: 'CodeASystem', publisher: { '@id': `${siteUrl}/#organization` } },
+        {
+          ...webPage,
+          primaryImageOfPage: { '@id': `${seo.url}#primaryimage` },
+          breadcrumb: { '@id': breadcrumbId },
+          mainEntity: { '@id': applicationId },
+        },
+        {
+          '@type': 'ImageObject',
+          '@id': `${seo.url}#primaryimage`,
+          url: `${siteUrl}${seo.image}`,
+          contentUrl: `${siteUrl}${seo.image}`,
+          width: 1200,
+          height: 630,
+          caption: seo.imageAlt,
+        },
+        {
+          '@type': 'BreadcrumbList',
+          '@id': breadcrumbId,
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+            { '@type': 'ListItem', position: 2, name: 'Tools', item: `${siteUrl}/tools/` },
+            { '@type': 'ListItem', position: 3, name: seo.applicationName, item: seo.url },
+          ],
+        },
+        {
+          '@type': 'WebApplication',
+          '@id': applicationId,
+          name: seo.applicationName,
+          applicationCategory: 'BusinessApplication',
+          applicationSubCategory: 'Resume builder',
+          operatingSystem: 'Any',
+          url: seo.url,
+          description: seo.description,
+          image: { '@id': `${seo.url}#primaryimage` },
+          featureList: seo.features,
+          browserRequirements: 'Requires a modern web browser with JavaScript enabled.',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          provider: { '@id': `${siteUrl}/#organization` },
         },
       ],
     }

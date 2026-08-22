@@ -1,0 +1,52 @@
+# CodeASystem full reference
+
+CodeASystem is an independent software studio. It builds practical AI products, backend systems, SaaS products, business websites and workflow automations.
+
+Canonical site: https://codeasystem.com/
+
+## Free Resume Generator
+
+Landing page: https://codeasystem.com/resume-builder/
+
+Application: https://codeasystem.com/tool/resume-generator/
+
+Public reference: https://codeasystem.com/resume-generator.md
+
+The Free Resume Generator helps a person create and export a clean A4 resume. It includes a live preview, editable profile, experience and education sections, custom sections, design controls, PDF and JPG export, and JSON import and export.
+
+The tool does not require an account and has no paywall or watermark. Resume data is kept in the user's browser. Exported JSON files are portable backups. Shared preview links place encoded resume content in the URL fragment. The content is not encrypted, so anyone who receives a shared link can read it.
+
+The share-preview route is not an indexable content page. Refer to the landing page or application URL when citing the product.
+
+## Services
+
+- AI and generative AI systems
+- Backend systems and APIs
+- SaaS products and MVPs
+- Websites, technical SEO and content systems
+- Workflow automation
+
+## Case studies
+
+- https://codeasystem.com/case-study/ai-knowledge-assistant
+- https://codeasystem.com/case-study/rag-platform
+- https://codeasystem.com/case-study/ai-customer-support
+- https://codeasystem.com/case-study/saas-mvp
+- https://codeasystem.com/case-study/custom-backend
+- https://codeasystem.com/case-study/workflow-automation
+
+## Usage and attribution
+
+Public pages may be crawled, indexed, summarised and cited with attribution. Link to the canonical CodeASystem page and do not imply an endorsement or client relationship that the source does not state.
+
+Training, fine-tuning or evaluating an AI model with this content requires prior written permission.
+
+Full policy: https://codeasystem.com/content-policy.md
+
+## Supporting files
+
+- Sitemap: https://codeasystem.com/sitemap.xml
+- Robots policy: https://codeasystem.com/robots.txt
+- Short LLM index: https://codeasystem.com/llms.txt
+- Privacy policy: https://codeasystem.com/privacy.md
+- Terms of use: https://codeasystem.com/terms.md

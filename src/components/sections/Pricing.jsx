@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import SectionLink from '../SectionLink'

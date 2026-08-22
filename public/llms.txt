@@ -1,8 +1,8 @@
 # CodeASystem
 
-CodeASystem is an independent software studio.
+CodeASystem is an independent software studio that builds practical AI products, backend systems, SaaS products and workflow tools.
 
-The Markdown files below contain the complete text published on each corresponding page. They are not summaries.
+The links below point to public pages and Markdown references. The Markdown files contain the complete text published for their corresponding pages.
 
 ## Pages
 
@@ -14,6 +14,9 @@ The Markdown files below contain the complete text published on each correspondi
 - [SaaS MVP](https://codeasystem.com/case-study/saas-mvp.md)
 - [Custom Backend](https://codeasystem.com/case-study/custom-backend.md)
 - [Workflow Automation](https://codeasystem.com/case-study/workflow-automation.md)
+- [Free Resume Builder](https://codeasystem.com/resume-builder/)
+- [Free Resume Generator](https://codeasystem.com/tool/resume-generator/)
+- [Resume Generator reference](https://codeasystem.com/resume-generator.md)
 - [Content Policy for Crawlers and AI Agents](https://codeasystem.com/content-policy.md)
 - [CodeASystem Privacy Policy](https://codeasystem.com/privacy.md)
 - [CodeASystem Terms of Use](https://codeasystem.com/terms.md)
@@ -23,3 +26,4 @@ The Markdown files below contain the complete text published on each correspondi
 
 - [Sitemap](https://codeasystem.com/sitemap.xml)
 - [Robots policy](https://codeasystem.com/robots.txt)
+- [Full LLM reference](https://codeasystem.com/llms-full.txt)
